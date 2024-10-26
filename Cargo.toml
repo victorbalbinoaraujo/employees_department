@@ -4,3 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+colored = "2.0.0"
+terminal-emoji = "0.4.1"
+csv = "1.1"
