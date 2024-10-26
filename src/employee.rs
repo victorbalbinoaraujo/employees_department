@@ -41,7 +41,7 @@ pub fn remove_employee(employees: &mut HashMap<String, Vec<String>>, name: &str,
 }
 
 pub fn count_employees(employees: &HashMap<String, Vec<String>>, dpt: &str) -> String {
-    let count = employees.get(dpt).map_or(0, |names| names.len());  // Conta o número de empregados
+    let count = employees.get(dpt).map_or(0, |names| names.len());
     if count > 0 {
         format!("{} {} employees in department. '{}'.\n", count.to_string().green().bold(), dpt, dpt)
     } else {
